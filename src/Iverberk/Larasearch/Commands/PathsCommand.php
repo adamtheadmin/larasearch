@@ -14,7 +14,11 @@ class PathsCommand extends Command {
      *
      * @var string
      */
-    protected $name = 'larasearch:paths';
+    protected $signature = 'larasearch:paths
+                            {model?}
+                            {--dir=}
+                            {--relations}
+                            {--write-config}';
 
     /**
      * The console command description.
@@ -50,7 +54,7 @@ class PathsCommand extends Command {
      *
      * @return void
      */
-    public function fire()
+    public function handle()
     {
         $models = $this->argument('model');
 

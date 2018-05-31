@@ -13,7 +13,13 @@ class ReindexCommand extends Command {
      *
      * @var string
      */
-    protected $name = 'larasearch:reindex';
+    protected $signature = 'larasearch:reindex
+                            {model?}
+                            {--relations}
+                            {--mapping=}
+                            {--dir=}
+                            {--batch=750}
+                            {--force}';
 
     /**
      * The console command description.
@@ -27,7 +33,7 @@ class ReindexCommand extends Command {
      *
      * @return mixed
      */
-    public function fire()
+    public function handle()
     {
         $directoryModels = [];
         $models = $this->argument('model');
