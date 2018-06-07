@@ -36,7 +36,7 @@ class ReindexCommand extends Command {
     public function handle()
     {
         $directoryModels = [];
-        $models = $this->argument('model');
+        $models = (array) $this->argument('model');
 
         foreach ($models as $model)
         {
