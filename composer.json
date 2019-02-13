@@ -15,7 +15,7 @@
         "illuminate/console": "~5.0",
 		"illuminate/config": "~5.0",
         "doctrine/dbal": "^2.6",
-        "elasticsearch/elasticsearch": "~1.0",
+        "elasticsearch/elasticsearch": "~6.0",
         "nikic/php-parser": "*"
     },
     "autoload": {
